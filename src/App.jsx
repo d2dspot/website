@@ -30,12 +30,15 @@ import PrivateRoute from "@/routes/PrivateRoute";
 import FileFolderPage from "@/pages/admin/FileFolderPage";
 import AboutPage from "@/pages/public/AboutPage";
 import AcademyPage from "./pages/public/AcademyPage";
+import ScrollToTop from "./lib/ScrollToTop";
 
 const App = () => {
   useScroll();
 
   return (
     <Router>
+        <ScrollToTop />
+
       <ToastContainer />
       <Routes>
         {/* Public routes */}
