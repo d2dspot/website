@@ -4,6 +4,7 @@ import ButtonStar from "../buttons/ButtonStar";
 import ButtonGradient from "../buttons/ButtonGradient";
 import { FaCheck } from "react-icons/fa";
 import { showErrorToast, showSuccessToast, showWarningToast } from "@/lib/Toast";
+import emailjs from "@emailjs/browser";
 
 const Section1 = () => {
   const [formData, setFormData] = useState({
@@ -15,6 +16,8 @@ const Section1 = () => {
     agreement: false,
   });
 
+  const [isSending, setIsSending] = useState(false);
+
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData((prev) => ({
@@ -23,31 +26,76 @@ const Section1 = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Prevent double submit
+    if (isSending) return;
+
     const { firstName, email, phone, contactMethod, message, agreement } = formData;
 
     if (!agreement) {
-showWarningToast("Please agree to the Privacy Policy to proceed.", "Action Required");
+      showWarningToast("Please agree to the Privacy Policy to proceed.", "Action Required");
       return;
     }
 
     if (!firstName || !email || !phone || !contactMethod || !message) {
-      showWarningToast("Please fill out all the fields.","Action Required");
+      showWarningToast("Please fill out all the fields.", "Action Required");
       return;
     }
 
-    showSuccessToast("Message sent successfully!");
-    console.log("Submitted:", formData);
+    // Optional minimal email validation (no UI change)
+    const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(email).trim());
+    if (!emailOk) {
+      showWarningToast("Please enter a valid email address.", "Invalid Email");
+      return;
+    }
 
-    setFormData({
-      firstName: "",
-      email: "",
-      phone: "",
-      contactMethod: "",
-      message: "",
-      agreement: false,
-    });
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      showErrorToast("Email service not configured. Please try again later.", "Config Error");
+      return;
+    }
+
+    setIsSending(true);
+
+    try {
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          // These keys MUST match your EmailJS template variables
+          from_name: firstName,
+          from_email: email,
+          phone: phone,
+          contact_method: contactMethod,
+          message: message,
+          subject: "New Contact Form Submission",
+          to_email: "d2dspotz@gmail.com",
+        },
+        { publicKey }
+      );
+
+      showSuccessToast("Message sent successfully!");
+      console.log("Submitted:", formData);
+
+      setFormData({
+        firstName: "",
+        email: "",
+        phone: "",
+        contactMethod: "",
+        message: "",
+        agreement: false,
+      });
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      showErrorToast("Failed to send message. Please try again.", "Error");
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
@@ -149,7 +197,9 @@ showWarningToast("Please agree to the Privacy Policy to proceed.", "Action Requi
           </div>
 
           {/* Submit */}
-          <ButtonGradient type="submit">Send Message</ButtonGradient>
+          <ButtonGradient type="submit" disabled={isSending}>
+            {isSending ? "Sending..." : "Send Message"}
+          </ButtonGradient>
         </form>
       </div>
     </div>

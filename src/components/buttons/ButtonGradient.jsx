@@ -5,7 +5,18 @@ const ButtonGradient = ({
   onClick,
   className = "",
   type = "button",
+  disabled = false,
+  ...props
 }) => {
+  const handleClick = (e) => {
+    if (disabled) {
+      e.preventDefault();
+      e.stopPropagation();
+      return;
+    }
+    onClick?.(e);
+  };
+
   const baseClass = `
     w-fit relative inline-flex items-center justify-center
     h-[42px] sm:h-[44px]
@@ -21,13 +32,16 @@ const ButtonGradient = ({
     hover:border-white/30
     active:scale-95 group
     focus:outline-none focus-visible:ring-2 focus-visible:ring-white
+    disabled:opacity-50 disabled:cursor-not-allowed disabled:scale-100 disabled:hover:shadow-none
   `;
 
   return (
     <button
       type={type}
-      onClick={onClick}
+      onClick={handleClick}
+      disabled={disabled}
       className={`${baseClass} ${className}`}
+      {...props}
     >
       {/* Noise layers (unchanged) */}
       <div
