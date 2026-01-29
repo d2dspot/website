@@ -12,9 +12,17 @@ export const customCodeBlock = {
     const { createHighlighter } = await import("shiki");
     return createHighlighter({
       themes: ["github-dark"],
-      langs: Object.keys(defaultCodeBlock.supportedLanguages).filter(
-        (lang) => lang !== "swift"
-      ),
+      langs: [
+        "javascript",
+        "typescript",
+        "html",
+        "css",
+        "python",
+        "json",
+        "markdown",
+        "bash",
+        "sql",
+      ],
     });
   },
 };
