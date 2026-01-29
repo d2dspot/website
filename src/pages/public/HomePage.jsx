@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import AnimatedGridWrapper from "@/components/ui/AnimatedGridWrapper";
 import Section1 from "@/components/home/Section1";
 import Section2 from "@/components/home/Section2";
@@ -13,8 +14,11 @@ import Footer from "@/components/layouts/Footer";
 const HomePage = () => {
   return (
     <div className="flex flex-col w-full">
-      <title>Home | d2dspot</title>
-      <meta name="description" content="Explore how we turn ideas into working products. Real stories from clients who partnered with d2dspot." />
+      <Helmet>
+        <title>d2dspot | Product Development Agency | UI/UX & AI Product Studio</title>
+        <meta name="description" content="d2dspot turns your vision into market-ready digital products. Specializing in MVP development for founders, expert UI/UX design, and AI integration for SaaS." />
+        <link rel="canonical" href="https://d2dspot.com/" />
+      </Helmet>
       <Navbar />
       <div className="overflow-hidden">
         <AnimatedGridWrapper />

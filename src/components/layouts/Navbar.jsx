@@ -65,18 +65,16 @@ const Navbar = () => {
   return (
     <div className="fixed w-full z-50 flex justify-center items-center transition-all duration-500">
       <header
-        className={`flex items-center justify-between border border-white/20 backdrop-blur-xs transition-all duration-500 ${
-          scrolled
-            ? `bg-white translate-y-3 sm:translate-y-10 max-w-[1140px] w-[80%] sm:w-[1140px] rounded-2xl px-4 sm:px-8 py-2 sm:py-2 transform ease-in-out ${
-                menuOpen && " rounded-b-none"
-              }`
+        className={`flex items-center justify-between border border-white/20 backdrop-blur-xs transition-all duration-500 ${scrolled
+            ? `bg-white translate-y-3 sm:translate-y-10 max-w-[1140px] w-[80%] sm:w-[1140px] rounded-2xl px-4 sm:px-8 py-2 sm:py-2 transform ease-in-out ${menuOpen && " rounded-b-none"
+            }`
             : "bg-white sm:translate-y-0 px-7 sm:px-10 py-4 max-w-full w-full sm:py-4 transform ease-in-out"
-        }`}
+          }`}
       >
         <img
           src={logo_icon}
           className="w-[120px] sm:w-[138px] h-[36px]"
-          alt="Logo"
+          alt="d2dspot - Product Development Agency Logo"
         />
 
         {/* Desktop Nav */}
@@ -87,9 +85,8 @@ const Navbar = () => {
               <div key={label} className="relative group">
                 {hasDropdown && subItems ? (
                   <button
-                    className={`flex items-center gap-1 px-3 py-2 rounded-sm transition-all leading-[100%] tracking-normal ${
-                      scrolled ? "text-slate-600" : "text-[#525F81]"
-                    } hover:text-primary hover:font-semibold`}
+                    className={`flex items-center gap-1 px-3 py-2 rounded-sm transition-all leading-[100%] tracking-normal ${scrolled ? "text-slate-600" : "text-[#525F81]"
+                      } hover:text-primary hover:font-semibold`}
                   >
                     <span className="text-sm whitespace-nowrap">{label}</span>
                     <RxCaretDown className="w-4 h-4" />
@@ -97,13 +94,12 @@ const Navbar = () => {
                 ) : (
                   <Link
                     to={path}
-                    className={`flex items-center gap-1 px-3 py-2 rounded-sm transition-all leading-[100%] tracking-normal ${
-                      isActive
+                    className={`flex items-center gap-1 px-3 py-2 rounded-sm transition-all leading-[100%] tracking-normal ${isActive
                         ? "text-primary font-semibold"
                         : scrolled
-                        ? "text-slate-600"
-                        : "text-[#525F81]"
-                    } hover:text-primary hover:font-semibold`}
+                          ? "text-slate-600"
+                          : "text-[#525F81]"
+                      } hover:text-primary hover:font-semibold`}
                   >
                     <span className="text-sm whitespace-nowrap">{label}</span>
                   </Link>
@@ -129,7 +125,7 @@ const Navbar = () => {
         </div>
 
         {!isSmall && (
-          <ButtonGradient onClick={() => {}}>Start a Project</ButtonGradient>
+          <ButtonGradient onClick={() => { }}>Start a Project</ButtonGradient>
         )}
 
         {/* Mobile Menu Toggle */}
@@ -149,9 +145,8 @@ const Navbar = () => {
             animate="visible"
             exit="exit"
             variants={dropdownVariants}
-            className={`absolute top-[66px] shadow-md rounded-b-2xl md:hidden z-40 transition-all duration-500 ease-in-out ${
-              scrolled ? "max-w-[80%] w-[79.955%]" : "w-full max-w-[1140px]"
-            }`}
+            className={`absolute top-[66px] shadow-md rounded-b-2xl md:hidden z-40 transition-all duration-500 ease-in-out ${scrolled ? "max-w-[80%] w-[79.955%]" : "w-full max-w-[1140px]"
+              }`}
           >
             <div className="flex flex-col gap-4 bg-white w-full py-2 px-3 rounded-b-2xl border-t-2 border-primary">
               {navItems.map(({ label, path, hasDropdown, subItems }) => {
@@ -181,11 +176,10 @@ const Navbar = () => {
                       <Link
                         to={path}
                         onClick={() => setMenuOpen(false)}
-                        className={`flex items-center gap-2 text-base transition-all duration-500 ease-in-out ${
-                          isActive
+                        className={`flex items-center gap-2 text-base transition-all duration-500 ease-in-out ${isActive
                             ? "text-primary font-semibold"
                             : "text-slate-600"
-                        } hover:text-primary`}
+                          } hover:text-primary`}
                       >
                         <span>{label}</span>
                       </Link>

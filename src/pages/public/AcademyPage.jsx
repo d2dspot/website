@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Section1 from '@/components/academy/Section1'
 import Section2 from '@/components/academy/Section2'
 import Section3 from '@/components/academy/Section3'
@@ -12,8 +13,11 @@ import React from 'react'
 const AcademyPage = () => {
   return (
     <div className="flex flex-col w-full">
-      <title>Academy | d2dspot</title>
-      <meta name="description" content="Join our Academy to learn the latest in design, technology, and business growth." />
+      <Helmet>
+        <title>d2d Academy | Premier AI Education & Product Growth</title>
+        <meta name="description" content="Master the future of technology at d2d Academy. We provide premier AI education and workshops focused on integrating artificial intelligence into modern product development." />
+        <link rel="canonical" href="https://d2dspot.com/academy" />
+      </Helmet>
       <Navbar />
       <div className=" overflow-hidden">
         <AnimatedGridWrapper />

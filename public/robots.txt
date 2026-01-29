@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /unauthorized
+
+Sitemap: https://d2dspot.com/sitemap.xml

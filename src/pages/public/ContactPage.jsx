@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Section1 from "@/components/contact/Section1";
 import Section2 from "@/components/contact/Section2";
 import Section3 from "@/components/contact/Section3";
@@ -10,8 +11,11 @@ import React from "react";
 const ContactPage = () => {
   return (
     <div className="flex flex-col w-full">
-      <title>Contact Us | d2dspot</title>
-      <meta name="description" content="Get in touch with d2dspot to discuss your next big idea. We're here to help you build and launch successful digital products." />
+      <Helmet>
+        <title>Contact d2dspot | Request a Free MVP Consultation</title>
+        <meta name="description" content="Ready to build your product? Contact d2dspot for a free consultation. Let's discuss your MVP build, SaaS platform, or AI integration project today." />
+        <link rel="canonical" href="https://d2dspot.com/contact" />
+      </Helmet>
       <Navbar />
 
       {/* Background Wrapper */}

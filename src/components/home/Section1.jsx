@@ -5,7 +5,7 @@ import ButtonOutline from "../buttons/ButtonOutline";
 import { FaChevronRight } from "react-icons/fa";
 
 const Section1 = () => {
-  const startProjectHandler = () => {};
+  const startProjectHandler = () => { };
 
   return (
     <div className="px-4 sm:px-6 md:px-10 lg:px-[150px] mt-16 sm:mt-20 ">
@@ -15,9 +15,9 @@ const Section1 = () => {
 
         {/* Title */}
         <div className="z-10  w-full flex flex-col items-center justify-center text-center">
-          <h2 className="text-[#0F254F] flex-nowrap whitespace-nowrap font-normal  text-3xl sm:text-5xl md:text-6xl lg:text-[85px] leading-snug sm:leading-tight tracking-tight capitalize">
+          <h1 className="text-[#0F254F] flex-nowrap whitespace-nowrap font-normal  text-3xl sm:text-5xl md:text-6xl lg:text-[85px] leading-snug sm:leading-tight tracking-tight capitalize">
             Building ideas into real
-          </h2>
+          </h1>
           <span className="text-3xl flex-nowrap whitespace-nowrap  sm:text-5xl md:text-6xl lg:text-[85px] font-semibold leading-snug sm:leading-tight tracking-tight capitalize text-transparent bg-[radial-gradient(155.78%_218.27%_at_50%_-118.27%,_#F5F5FF_0%,_#4B4EFC_100%)] bg-clip-text">
             digital products
           </span>

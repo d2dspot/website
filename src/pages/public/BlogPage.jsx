@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Section3 from "@/components/BlogPage/Section3";
 import Section8 from "@/components/home/Section8";
 import Footer from "@/components/layouts/Footer";
@@ -8,8 +9,11 @@ import React from "react";
 const BlogPage = () => {
   return (
     <div className="flex flex-col w-full mx-auto">
-      <title>Blogs | d2dspot</title>
-      <meta name="description" content="Stay updated with the latest insights, trends, and stories from the world of design and technology." />
+      <Helmet>
+        <title>Tech & Design Insights | d2dspot Blog</title>
+        <meta name="description" content="Stay updated with the latest in AI integration, UI/UX trends, and product development strategies. Expert insights for startup founders and product owners." />
+        <link rel="canonical" href="https://d2dspot.com/blogs" />
+      </Helmet>
       <Navbar />
 
       {/* Hero Section with Visuals */}

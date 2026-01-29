@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Section1 from "@/components/about/Section1";
 import Section2 from "@/components/about/Section2";
 import Section3 from "@/components/about/Section3";
@@ -11,8 +12,11 @@ import React from "react";
 const AboutPage = () => {
   return (
     <div className="flex flex-col w-full">
-      <title>About Us | d2dspot</title>
-      <meta name="description" content="Learn more about d2dspot and our mission to help businesses grow through design and technology." />
+      <Helmet>
+        <title>About d2dspot | Our Design-to-Deployment Philosophy</title>
+        <meta name="description" content="Discover how d2dspot helps startups scale. Our mission is to bridge the gap between abstract ideas and functional, user-centric digital products through deep engineering expertise." />
+        <link rel="canonical" href="https://d2dspot.com/about" />
+      </Helmet>
       <Navbar />
       <div className=" overflow-hidden">
         <AnimatedGridWrapper />

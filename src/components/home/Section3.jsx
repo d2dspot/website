@@ -8,7 +8,7 @@ import ButtonStar from "../buttons/ButtonStar";
 import { FaChevronRight } from "react-icons/fa";
 import { SpinningTextWrapper } from "../ui/SpinningTextWrapper";
 import useIsSmallScreen from "@/hooks/useIsSmallScreen";
-import mobileImg from'/assets/sm_quote.png'
+import mobileImg from '/assets/sm_quote.png'
 const Section3 = () => {
   const isSmallScreen = useIsSmallScreen();
   return (
@@ -17,9 +17,10 @@ const Section3 = () => {
         {/* First Box */}
         <div className=" flex flex-col w-[100%]  sm:w-[570.75px] h-[325px] sm:h-[550px] relative">
           <div className="flex flex-col w-full relative  items-start">
-            <img src={mobileImg} className="w-full h-full "/>
+            <img src={mobileImg} alt="d2dspot client testimonial visualization" className="w-full h-full " />
             <img
               src={frame17}
+              alt="Design to development graphic element"
               className=" hidden sm:block max-w-[467px] h-96 absolute -top-[43px] left-0 "
             />
             <GradientCard
@@ -64,12 +65,13 @@ const Section3 = () => {
                     </div>
                     <img
                       src={logo_sm}
+                      alt="d2dspot seal"
                       className="absolute top-1/2 left-1/2 w-16 h-16 -translate-x-1/2 -translate-y-1/2 p-[1.73px] bg-blend-overlay rounded-full outline-[0.57px] outline-offset-[-0.57px] outline-white/20"
                     />
                   </div>
                 </div>
 
-              
+
               </>
             ) : (
               <>
@@ -95,19 +97,21 @@ const Section3 = () => {
                     </div>
                     <img
                       src={logo_sm}
+                      alt="d2dspot seal"
                       className="absolute top-1/2 left-1/2 w-16 h-16 -translate-x-1/2 -translate-y-1/2 p-[1.73px] bg-blend-overlay rounded-full outline-[0.57px] outline-offset-[-0.57px] outline-white/20"
                     />
                   </div>
                 </div>
 
-              
+
               </>
             )}
-              <img
-                  src={group}
-                  className="hidden sm:block max-w-[395px] h-[300px] mt-6 absolute 
+            <img
+              src={group}
+              alt="d2dspot team collaboration"
+              className="hidden sm:block max-w-[395px] h-[300px] mt-6 absolute 
                     sm:top-[74px] sm:left-[104px] rounded-[20px] z-0"
-                />
+            />
           </div>
         </div>
 

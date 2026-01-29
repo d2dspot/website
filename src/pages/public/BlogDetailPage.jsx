@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { blogs } from "@/assets/data";
@@ -30,8 +31,11 @@ const BlogDetailPage = () => {
 
   return (
     <div className="w-full">
-      <title>{`${blog.title} | d2dspot Blog`}</title>
-      <meta name="description" content={blog.excerpt || `Read more about ${blog.title} on d2dspot blog.`} />
+      <Helmet>
+        <title>{`${blog.title} | d2dspot Blog`}</title>
+        <meta name="description" content={blog.excerpt || `Read the full article about ${blog.title} on d2dspot's professional blog.`} />
+        <link rel="canonical" href={`https://d2dspot.com/blog/${id}`} />
+      </Helmet>
       {/* Blog Header */}
       <Section1 blog={blog} />
 

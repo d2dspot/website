@@ -5,7 +5,7 @@ import ButtonOutline from "../buttons/ButtonOutline";
 import { FaChevronRight } from "react-icons/fa";
 
 const Section1 = () => {
-  const startProjectHandler = () => {};
+  const startProjectHandler = () => { };
 
   return (
     <div className="px-4 sm:px-6 md:px-10 lg:px-[150px] mt-16 sm:mt-20">
@@ -28,9 +28,9 @@ const Section1 = () => {
 
         {/* Subtitle */}
         <p className="z-10 text-sm sm:text-base md:text-lg text-center text-[#263343] max-w-[864px] px-2">
-          We turn bold ideas into real-world products. From startups to student
-          founders, d2dspot partners with dreamers to design, build, and scale
-          what’s next in tech.
+          Master the future of digital content. At d2dspot Academy, we teach
+          advanced concepts in Artificial Intelligence, focusing on Large Language Models,
+          Prompt Engineering, and the art of crafting high-ranking, SEO-friendly text.
         </p>
 
         {/* CTA Buttons */}
