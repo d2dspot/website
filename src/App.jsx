@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const LoginPage = React.lazy(() => import("@/pages/admin/LoginPage.jsx"));
 const FileManagerPage = React.lazy(() => import("@/pages/admin/FileManagerPage.jsx"));
@@ -99,6 +100,7 @@ const App = () => {
           <Route path="/unauthorized" element={<NotAuthorized />} />
         </Routes>
       </React.Suspense>
+      <SpeedInsights />
     </Router>
   );
 };
