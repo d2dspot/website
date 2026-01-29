@@ -16,22 +16,9 @@ const footerLinks = [
     title: "Menu",
     links: [
       { name: "Home", path: "/" },
-      { name: "Products", path: "/products" },
       { name: "Academy", path: "/academy" },
       { name: "Blogs", path: "/blogs" },
       { name: "Contact Us", path: "/contact" },
-    ],
-  },
-  {
-    title: "Products",
-    links: [
-      { name: "Responsible AI", path: "/products/responsible-ai" },
-      { name: "AI Agent", path: "/products/ai-agent" },
-      {
-        name: "Intelligent AI Marketing",
-        path: "/products/intelligent-ai-marketing",
-      },
-      { name: "Custom AI Solutions", path: "/products/custom-ai" },
     ],
   },
   {
@@ -80,7 +67,9 @@ const Footer = ({ title, desc, buttonText }) => {
         {/* Footer Upper Grid */}
         <div className="w-full px-4 sm:px-6 lg:px-[150px] py-4 sm:py-16 md:py-20 lg:py-24 flex flex-col lg:flex-row sm:items-start sm:justify-between gap-3 sm:gap-12">
           {/* Logo */}
-          <img src={logo_icon} className="h-10 w-auto" alt="Logo" />
+          <Link to="/">
+            <img src={logo_icon} className="h-10 w-auto" alt="Logo" />
+          </Link>
 
           {/* Links and Social */}
           <div className=" w-full  max-w-[720px] flex  sm:flex-row flex-wrap gap-8 justify-around sm:justify-between items-start">

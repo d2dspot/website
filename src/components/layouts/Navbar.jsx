@@ -28,7 +28,6 @@ const Navbar = () => {
 
   const navItems = [
     { label: "Home", path: "/", hasDropdown: false },
-    { label: "Product", path: "/product", hasDropdown: true },
     {
       label: "Company",
       hasDropdown: true,
@@ -66,16 +65,18 @@ const Navbar = () => {
     <div className="fixed w-full z-50 flex justify-center items-center transition-all duration-500">
       <header
         className={`flex items-center justify-between border border-white/20 backdrop-blur-xs transition-all duration-500 ${scrolled
-            ? `bg-white translate-y-3 sm:translate-y-10 max-w-[1140px] w-[80%] sm:w-[1140px] rounded-2xl px-4 sm:px-8 py-2 sm:py-2 transform ease-in-out ${menuOpen && " rounded-b-none"
-            }`
-            : "bg-white sm:translate-y-0 px-7 sm:px-10 py-4 max-w-full w-full sm:py-4 transform ease-in-out"
+          ? `bg-white translate-y-3 sm:translate-y-10 max-w-[1140px] w-[80%] sm:w-[1140px] rounded-2xl px-4 sm:px-8 py-2 sm:py-2 transform ease-in-out ${menuOpen && " rounded-b-none"
+          }`
+          : "bg-white sm:translate-y-0 px-7 sm:px-10 py-4 max-w-full w-full sm:py-4 transform ease-in-out"
           }`}
       >
-        <img
-          src={logo_icon}
-          className="w-[120px] sm:w-[138px] h-[36px]"
-          alt="d2dspot - Product Development Agency Logo"
-        />
+        <Link to="/">
+          <img
+            src={logo_icon}
+            className="w-[120px] sm:w-[138px] h-[36px]"
+            alt="d2dspot - Product Development Agency Logo"
+          />
+        </Link>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex gap-4 items-center">
@@ -95,10 +96,10 @@ const Navbar = () => {
                   <Link
                     to={path}
                     className={`flex items-center gap-1 px-3 py-2 rounded-sm transition-all leading-[100%] tracking-normal ${isActive
-                        ? "text-primary font-semibold"
-                        : scrolled
-                          ? "text-slate-600"
-                          : "text-[#525F81]"
+                      ? "text-primary font-semibold"
+                      : scrolled
+                        ? "text-slate-600"
+                        : "text-[#525F81]"
                       } hover:text-primary hover:font-semibold`}
                   >
                     <span className="text-sm whitespace-nowrap">{label}</span>
@@ -177,8 +178,8 @@ const Navbar = () => {
                         to={path}
                         onClick={() => setMenuOpen(false)}
                         className={`flex items-center gap-2 text-base transition-all duration-500 ease-in-out ${isActive
-                            ? "text-primary font-semibold"
-                            : "text-slate-600"
+                          ? "text-primary font-semibold"
+                          : "text-slate-600"
                           } hover:text-primary`}
                       >
                         <span>{label}</span>
