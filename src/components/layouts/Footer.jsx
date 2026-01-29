@@ -45,10 +45,8 @@ const footerLinks = [
 ];
 
 const socialLinks = [
-  { icon: <FaFacebook size={20} />, url: "https://www.facebook.com" },
-  { icon: <FaInstagram size={20} />, url: "https://www.instagram.com" },
-  { icon: <FaXTwitter size={20} />, url: "https://www.twitter.com" },
-  { icon: <FaLinkedin size={20} />, url: "https://www.linkedin.com" },
+  { icon: <FaInstagram size={20} />, url: "https://www.instagram.com/d2dspot_official" },
+  { icon: <FaLinkedin size={20} />, url: "https://www.linkedin.com/company/d2dspot" },
 ];
 
 const Footer = ({ title, desc, buttonText }) => {
