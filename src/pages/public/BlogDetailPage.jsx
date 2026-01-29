@@ -30,28 +30,30 @@ const BlogDetailPage = () => {
 
   return (
     <div className="w-full">
+      <title>{`${blog.title} | d2dspot Blog`}</title>
+      <meta name="description" content={blog.excerpt || `Read more about ${blog.title} on d2dspot blog.`} />
       {/* Blog Header */}
       <Section1 blog={blog} />
 
       {/* Main Content + TOC */}
       <div className=" w-full sm:max-w-screen-xl px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 mx-auto py-12">
-  <div className="flex flex-col lg:flex-row gap-12">
-    
-    {/* Sticky TOC - Hidden on small screens */}
-    <div className="hidden sm:block w-[268px] flex-shrink-0">
-      <Section2 content={content} />
-    </div>
+        <div className="flex flex-col lg:flex-row gap-12">
 
-    {/* Main Blog Content Area */}
-    <div className="w-full  flex-1 flex flex-col gap-8">
-      <Section4
-        title="Key Insight"
-        content="Always validate your assumptions before shipping production code. Clear documentation can prevent team misalignment and customer confusion."
-      />
-      <Section3 content={content} />
-    </div>
-  </div>
-</div>
+          {/* Sticky TOC - Hidden on small screens */}
+          <div className="hidden sm:block w-[268px] flex-shrink-0">
+            <Section2 content={content} />
+          </div>
+
+          {/* Main Blog Content Area */}
+          <div className="w-full  flex-1 flex flex-col gap-8">
+            <Section4
+              title="Key Insight"
+              content="Always validate your assumptions before shipping production code. Clear documentation can prevent team misalignment and customer confusion."
+            />
+            <Section3 content={content} />
+          </div>
+        </div>
+      </div>
 
 
       {/* Featured Articles */}

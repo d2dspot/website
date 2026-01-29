@@ -5,26 +5,26 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Section1 = ({ blog }) => {
   const { category, title, head, headLogo, date, readTime } = blog;
- const { setSelectedCategory } = useCategory();
+  const { setSelectedCategory } = useCategory();
   const navigate = useNavigate();
 
   const handleCategoryClick = () => {
- navigate(`/blogs#categoryBlogDiv`);
-       setSelectedCategory(category);
+    navigate(`/blogs#categoryBlogDiv`);
+    setSelectedCategory(category);
 
-  setTimeout(() => {
-    const categoryDiv = document.getElementById("categoryBlogDiv");
-    if (categoryDiv) {
-      categoryDiv.scrollIntoView({
-        behavior: "smooth", // Smooth scrolling
-        block: "center", // Align 
-        inline: "nearest", // horizontal alignment
-      });
-    }
-  }, 100); // Small delay to ensure the page is fully loaded 
-};
+    setTimeout(() => {
+      const categoryDiv = document.getElementById("categoryBlogDiv");
+      if (categoryDiv) {
+        categoryDiv.scrollIntoView({
+          behavior: "smooth", // Smooth scrolling
+          block: "center", // Align 
+          inline: "nearest", // horizontal alignment
+        });
+      }
+    }, 100); // Small delay to ensure the page is fully loaded 
+  };
 
- return (
+  return (
     <div className="w-full px-4 sm:px-6 md:px-12 lg:px-24 py-12 mx-auto max-w-screen-xl flex flex-col gap-10">
       <div className="w-full flex flex-col gap-6">
         {/* Breadcrumb & Title */}
@@ -55,7 +55,7 @@ const Section1 = ({ blog }) => {
         {/* Author, Date, Read Time */}
         <div className="flex flex-wrap gap-4 sm:gap-6 items-center text-sm sm:text-base text-blue-950 font-normal">
           <div className="flex items-center gap-3">
-            <img src={headLogo} alt="head logo" className="w-8 h-8 rounded-full object-contain" />
+            <img src={headLogo} alt="head logo" className="w-8 h-8 rounded-full object-cover" />
             <span className="capitalize">{head}</span>
           </div>
 

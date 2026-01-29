@@ -6,7 +6,7 @@ const Section6 = () => {
   return (
     <div className="flex flex-col w-full mx-auto self-stretch px-4 sm:px-10 lg:px-28 py-16 bg-violet-50 justify-start items-center gap-12">
       <div className="w-full max-w-[1200px] flex flex-col justify-start items-center gap-12">
-        
+
         {/* Heading Section */}
         <div className="w-full flex flex-col justify-center items-center sm:justify-start sm:items-start gap-6">
           <ButtonStar>Why D2D Spot?</ButtonStar>
@@ -18,7 +18,7 @@ const Section6 = () => {
                 <span className="text-primary font-semibold">Our Expertise</span>
               </h2>
               <p className="text-slate-800 text-base sm:text-lg font-normal leading-relaxed text-center sm:text-left">
-                Discover how ValOpt’s innovative AI solutions empower businesses to thrive ethically and efficiently in the digital age.
+                Discover how D2dspot’s innovative AI solutions empower businesses to thrive ethically and efficiently in the digital age.
               </p>
             </div>
 

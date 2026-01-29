@@ -11,15 +11,17 @@ import React from "react";
 const AboutPage = () => {
   return (
     <div className="flex flex-col w-full">
+      <title>About Us | d2dspot</title>
+      <meta name="description" content="Learn more about d2dspot and our mission to help businesses grow through design and technology." />
       <Navbar />
       <div className=" overflow-hidden">
         <AnimatedGridWrapper />
         <Section1 />
       </div>
       <Section2 />
-      <Section3/>
-      <Section4/>
-      <Section7 className='bg-violet-50'/>
+      <Section3 />
+      <Section4 />
+      <Section7 className='bg-violet-50' />
       <div className="overflow-hidden rounded-tl-[42px] rounded-tr-[42px]  ">
         <AnimatedGridWrapper />
         <Footer

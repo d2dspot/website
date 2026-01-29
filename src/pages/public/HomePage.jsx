@@ -13,12 +13,13 @@ import Footer from "@/components/layouts/Footer";
 const HomePage = () => {
   return (
     <div className="flex flex-col w-full">
+      <title>Home | d2dspot</title>
+      <meta name="description" content="Explore how we turn ideas into working products. Real stories from clients who partnered with d2dspot." />
       <Navbar />
       <div className="overflow-hidden">
         <AnimatedGridWrapper />
         <Section1 />
       </div>
-      <Section2 />
       <Section3 />
       <Section4 />
       <Section5 />

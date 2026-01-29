@@ -11,18 +11,20 @@ import React from 'react'
 
 const AcademyPage = () => {
   return (
-     <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full">
+      <title>Academy | d2dspot</title>
+      <meta name="description" content="Join our Academy to learn the latest in design, technology, and business growth." />
       <Navbar />
       <div className=" overflow-hidden">
         <AnimatedGridWrapper />
         <Section1 />
-        <Section2/>
+        <Section2 />
       </div>
-      <Section3/>
-      <Section4/>
-      <Section5/>
-      <Section6/>
-       <div className="overflow-hidden rounded-tl-[42px] rounded-tr-[42px]  ">
+      <Section3 />
+      <Section4 />
+      <Section5 />
+      <Section6 />
+      <div className="overflow-hidden rounded-tl-[42px] rounded-tr-[42px]  ">
         <AnimatedGridWrapper />
         <Footer
           title={"Is Your Brand Ready for a Digital Upgrade?"}

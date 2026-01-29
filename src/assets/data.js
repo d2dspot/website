@@ -215,7 +215,7 @@ export const missioncards = [
     title: "Growing Through Meaningful Partnerships",
     desc: "We work side-by-side with clients and co-creators, building long-term relationships that grow into sustainable success.",
   },
- 
+
 ];
 
 export const faqItems = [
@@ -306,19 +306,19 @@ export const blogs = [
     excerpt:
       "The combination of Generative AI (Gen AI) and Responsible AI has revolutionized technology, leading to big steps forward while focusing on ethical issues...",
     image: "/assets/blog_1.png",
-    head: "Valopt.ai",
-    headLogo: "/assets/val.png",
+    head: "d2dspot.com",
+    headLogo: "/assets/d2dspot.svg",
   },
   {
     id: "eu-ai-act-compliance",
     category: "Future Ai",
     date: "2024-07-13T11:00:00Z",
     readTime: "5 Mins Read",
-    title: "Achieve Seamless EU AI Act Compliance with Valopt Responsible AI",
-    excerpt: "Understand how Valopt helps in EU compliance...",
+    title: "Achieve Seamless EU AI Act Compliance with D2dspot Responsible AI",
+    excerpt: "Understand how D2dspot helps in EU compliance...",
     image: "/assets/blog_2.png",
-    head: "Valopt.ai",
-    headLogo: "/assets/val.png",
+    head: "d2dspot.com",
+    headLogo: "/assets/d2dspot.svg",
   },
   {
     id: "11",
@@ -328,8 +328,8 @@ export const blogs = [
     title: "Ethical Standards in AI Development",
     excerpt: "A deeper look into responsible AI ethics...",
     image: "/assets/blog_2.png",
-    head: "Valopt.ai",
-    headLogo: "/assets/val.png",
+    head: "d2dspot.com",
+    headLogo: "/assets/d2dspot.svg",
   },
   {
     id: "22",
@@ -339,8 +339,8 @@ export const blogs = [
     title: "The Future of AI Governance",
     excerpt: "How policies shape the development of AI...",
     image: "/assets/blog_2.png",
-    head: "Valopt.ai",
-    headLogo: "/assets/val.png",
+    head: "d2dspot.com",
+    headLogo: "/assets/d2dspot.svg",
   },
   {
     id: "33",
@@ -468,7 +468,7 @@ export const testimonials = [
   {
     title: "Focusing on AI Assistant / Customer Engagement",
     content:
-      "ValOpt's AI Assistant revolutionized our customer support, cutting response times by 65% and boosting online conversions by 20%. It's truly a game-changer for digital engagement!",
+      "D2dspot's AI Assistant revolutionized our customer support, cutting response times by 65% and boosting online conversions by 20%. It's truly a game-changer for digital engagement!",
     name: "Rhonda R",
     company: "Global Retailer",
     image: "/assets/Oval.png",
@@ -477,7 +477,7 @@ export const testimonials = [
   {
     title: "Focusing on Responsible AI / Data & Compliance",
     content:
-      "Navigating the complexities of AI ethics and compliance felt daunting, but ValOpt's Responsible AI Framework made it seamless.",
+      "Navigating the complexities of AI ethics and compliance felt daunting, but D2dspot's Responsible AI Framework made it seamless.",
     name: "Antoinette B.",
     company: "Financial Services",
     image: "/assets/batman.png",
@@ -504,7 +504,7 @@ export const testimonials = [
   {
     title: "Real-time Analytics & Insights",
     content:
-      "Dashboards now offer insights we didn't think were possible before adopting ValOpt.",
+      "Dashboards now offer insights we didn't think were possible before adopting D2dspot.",
     name: "Kabir R.",
     company: "Healthcare Solutions",
     image: "/assets/jinx.png",
@@ -1021,127 +1021,127 @@ export const folders = [
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
     dropdownOptions: ["Edit", "Delete"],
-  },{
+  }, {
     id: "blog-images",
     title: "BlogImages",
     type: "folder",
@@ -1175,7 +1175,7 @@ export const folderContents = {
       title: "expense.xlsx",
       type: "excel",
       createdAt: "2025-07-25T10:30:00Z",
-      fileUrl:'/content/expense.xlsx'
+      fileUrl: '/content/expense.xlsx'
     },
     {
       id: 21,

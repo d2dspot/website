@@ -10,6 +10,8 @@ import React from "react";
 const ContactPage = () => {
   return (
     <div className="flex flex-col w-full">
+      <title>Contact Us | d2dspot</title>
+      <meta name="description" content="Get in touch with d2dspot to discuss your next big idea. We're here to help you build and launch successful digital products." />
       <Navbar />
 
       {/* Background Wrapper */}
@@ -31,7 +33,7 @@ const ContactPage = () => {
         <Footer
           title={"Ready to Transform Your Business with AI?"}
           desc={
-            "Let's discuss how ValOpt's responsible and sustainable AI solutions can drive your growth. Our experts are here to help you unlock new possibilities."
+            "Let's discuss how D2dspot's responsible and sustainable AI solutions can drive your growth. Our experts are here to help you unlock new possibilities."
           }
           buttonText={"Request a Free Consultation"}
         />

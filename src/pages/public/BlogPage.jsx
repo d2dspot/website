@@ -8,21 +8,23 @@ import React from "react";
 const BlogPage = () => {
   return (
     <div className="flex flex-col w-full mx-auto">
+      <title>Blogs | d2dspot</title>
+      <meta name="description" content="Stay updated with the latest insights, trends, and stories from the world of design and technology." />
       <Navbar />
 
       {/* Hero Section with Visuals */}
-    {/* Hero Section with Visuals */}
-<div className="relative w-full mt-16 sm:mt-20 mx-auto  sm:overflow-visible py-4 sm:py-12 flex items-center justify-center overflow-hidden">
-  {/* Radial & Linear Backgrounds */}
-  <div className="absolute -top-50 -left-100 w-[60vw] h-[100vh] bg-[radial-gradient(circle,rgba(99,102,241,0.3)_0%,rgba(255,255,255,0)_50%)] blur-3xl"></div>
-  <div className="absolute -top-50 -right-100 w-[60vw] h-[100vh] bg-[radial-gradient(circle,rgba(99,102,241,0.3)_0%,rgba(255,255,255,0)_50%)] blur-3xl"></div>
-  <div className="absolute -top-50 right-0 w-[100vw] h-[90vh] bg-[linear-gradient(to_bottom,rgba(99,102,241,0.5)_0%,rgba(255,255,255,0)_100%)] blur-3xl"></div>
+      {/* Hero Section with Visuals */}
+      <div className="relative w-full mt-16 sm:mt-20 mx-auto  sm:overflow-visible py-4 sm:py-12 flex items-center justify-center overflow-hidden">
+        {/* Radial & Linear Backgrounds */}
+        <div className="absolute -top-50 -left-100 w-[60vw] h-[100vh] bg-[radial-gradient(circle,rgba(99,102,241,0.3)_0%,rgba(255,255,255,0)_50%)] blur-3xl"></div>
+        <div className="absolute -top-50 -right-100 w-[60vw] h-[100vh] bg-[radial-gradient(circle,rgba(99,102,241,0.3)_0%,rgba(255,255,255,0)_50%)] blur-3xl"></div>
+        <div className="absolute -top-50 right-0 w-[100vw] h-[90vh] bg-[linear-gradient(to_bottom,rgba(99,102,241,0.5)_0%,rgba(255,255,255,0)_100%)] blur-3xl"></div>
 
-  {/* Section8 Content Layer */}
-  <div className="relative z-10 w-full">
-    <Section8 />
-  </div>
-</div>
+        {/* Section8 Content Layer */}
+        <div className="relative z-10 w-full">
+          <Section8 />
+        </div>
+      </div>
 
 
       {/* Blog Section */}
