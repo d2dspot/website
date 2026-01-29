@@ -28,15 +28,9 @@ const Navbar = () => {
 
   const navItems = [
     { label: "Home", path: "/", hasDropdown: false },
-    {
-      label: "Company",
-      hasDropdown: true,
-      subItems: [
-        { label: "Blogs", path: "/blogs" },
-        { label: "About Us", path: "/about" },
-        { label: "Academy", path: "/academy" },
-      ],
-    },
+    { label: "About Us", path: "/about" },
+    { label: "Academy", path: "/academy" },
+    { label: "Blogs", path: "/blogs" },
     { label: "Contact Us", path: "/contact", hasDropdown: false },
   ];
 
