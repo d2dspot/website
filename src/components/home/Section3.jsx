@@ -9,6 +9,7 @@ import { FaChevronRight } from "react-icons/fa";
 import { SpinningTextWrapper } from "../ui/SpinningTextWrapper";
 import useIsSmallScreen from "@/hooks/useIsSmallScreen";
 import mobileImg from '/assets/sm_quote.png'
+import { Link } from "react-router-dom";
 const Section3 = () => {
   const isSmallScreen = useIsSmallScreen();
   return (
@@ -135,9 +136,11 @@ const Section3 = () => {
               </p>
             </div>
           </div>
-          <ButtonGradient>
-            Our Story <FaChevronRight className="w-5 h-5 ml-2" />
-          </ButtonGradient>
+          <Link to="/about">
+            <ButtonGradient>
+              Our Story <FaChevronRight className="w-5 h-5 ml-2" />
+            </ButtonGradient>
+          </Link>
         </div>
       </div>
     </div>

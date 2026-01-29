@@ -28,8 +28,8 @@ const Navbar = () => {
 
   const navItems = [
     { label: "Home", path: "/", hasDropdown: false },
-    { label: "About Us", path: "/about" },
     { label: "Academy", path: "/academy" },
+    { label: "About Us", path: "/about" },
     { label: "Blogs", path: "/blogs" },
     { label: "Contact Us", path: "/contact", hasDropdown: false },
   ];
@@ -119,9 +119,11 @@ const Navbar = () => {
           })}
         </div>
 
-        {!isSmall && (
-          <ButtonGradient onClick={() => { }}>Start a Project</ButtonGradient>
-        )}
+        <Link to="/contact">
+          {!isSmall && (
+            <ButtonGradient onClick={() => { }}>Start a Project</ButtonGradient>
+          )}
+        </Link>
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden flex items-center">
@@ -182,12 +184,14 @@ const Navbar = () => {
                   </div>
                 );
               })}
-              <ButtonGradient
-                className="w-full"
-                onClick={() => setMenuOpen(false)}
-              >
-                Start a Project
-              </ButtonGradient>
+              <Link to="/contact" className="w-full">
+                <ButtonGradient
+                  className="w-full"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Start a Project
+                </ButtonGradient>
+              </Link>
             </div>
           </motion.div>
         )}

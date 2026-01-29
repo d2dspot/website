@@ -7,7 +7,7 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 import { HiArrowNarrowUp } from "react-icons/hi";
 
@@ -17,15 +17,8 @@ const footerLinks = [
     links: [
       { name: "Home", path: "/" },
       { name: "Academy", path: "/academy" },
-      { name: "Blogs", path: "/blogs" },
-      { name: "Contact Us", path: "/contact" },
-    ],
-  },
-  {
-    title: "Company",
-    links: [
-      { name: "Academy", path: "/academy" },
       { name: "About Us", path: "/about" },
+      { name: "Blogs", path: "/blogs" },
       { name: "Contact Us", path: "/contact" },
     ],
   },
@@ -37,6 +30,7 @@ const socialLinks = [
 ];
 
 const Footer = ({ title, desc, buttonText }) => {
+  const location = useLocation();
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -53,11 +47,11 @@ const Footer = ({ title, desc, buttonText }) => {
             {desc}
           </p>
           <div className="inline-flex justify-center items-center gap-7">
-            <div className="px-6 py-4 rounded-xl outline-1 outline-offset-[-1px] outline-white/20 flex justify-center items-center gap-3 overflow-hidden">
+            <Link to="/contact" className="px-6 py-4 rounded-xl outline-1 outline-offset-[-1px] outline-white/20 flex justify-center items-center gap-3 overflow-hidden">
               <ButtonGradient className="w-full max-w-[332px] px-6 flex items-center gap-3 py-4 whitespace-nowrap">
                 {buttonText}
               </ButtonGradient>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -76,24 +70,31 @@ const Footer = ({ title, desc, buttonText }) => {
             {footerLinks.map((section) => (
               <div
                 key={section.title}
-                className="flex  flex-col items-start gap-2 text-blue-950 text-xs font-normal"
+                className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 text-blue-950 text-xs font-normal"
               >
-                <span className="text-sm font-medium">{section.title}</span>
-                {section.links.map((link) => (
-                  <Link
-                    key={link.name}
-                    to={link.path}
-                    className="opacity-70 hover:text-blue-600 transition"
-                  >
-                    {link.name}
-                  </Link>
-                ))}
+                <div className="flex flex-row flex-wrap gap-4 sm:gap-6">
+                  {section.links.map((link) => {
+                    const isActive = location.pathname === link.path;
+                    return (
+                      <Link
+                        key={link.name}
+                        to={link.path}
+                        className={`text-sm transition-all leading-[100%] tracking-normal ${isActive
+                          ? "text-primary font-semibold"
+                          : "text-[#525F81] hover:text-primary hover:font-semibold"
+                          }`}
+                      >
+                        {link.name}
+                      </Link>
+                    );
+                  })}
+                </div>
               </div>
             ))}
 
             {/* Follow Us */}
             <div className="flex flex-col items-start gap-4 text-blue-950 text-xs font-normal">
-              <span className="text-sm font-medium text-center sm:text-left w-full sm:w-fit ">FOLLOW US</span>
+              <span className="text-sm font-semibold text-center sm:text-left w-full sm:w-fit text-[#525F81]">FOLLOW US</span>
               <div className="flex justify-end items-center gap-3">
                 {socialLinks.map((item, index) => (
                   <Link
@@ -102,7 +103,7 @@ const Footer = ({ title, desc, buttonText }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <div className="w-6 h-6 text-3xl text-slate-500 rounded-full flex items-center justify-center hover:text-blue-600 transition">
+                    <div className="w-6 h-6 text-3xl text-slate-500 rounded-full flex items-center justify-center hover:text-primary transition">
                       {item.icon}
                     </div>
                   </Link>

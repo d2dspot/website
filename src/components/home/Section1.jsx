@@ -3,6 +3,7 @@ import ButtonStar from "../buttons/ButtonStar";
 import ButtonGradient from "../buttons/ButtonGradient";
 import ButtonOutline from "../buttons/ButtonOutline";
 import { FaChevronRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Section1 = () => {
   const startProjectHandler = () => { };
@@ -31,12 +32,16 @@ const Section1 = () => {
 
         {/* CTA Buttons */}
         <div className="z-10 flex sm:flex-row  w-full max-w-md gap-4 sm:gap-6">
-          <ButtonGradient className="w-full" onClick={startProjectHandler}>
-            Start a Project
-          </ButtonGradient>
-          <ButtonOutline onClick={startProjectHandler} className="w-full">
-            Explore Products <FaChevronRight className="w-5 h-5 ml-2" />
-          </ButtonOutline>
+          <Link to="/contact" className="w-full">
+            <ButtonGradient className="w-full" onClick={startProjectHandler}>
+              Start a Project
+            </ButtonGradient>
+          </Link>
+          <Link to="/contact" className="w-full">
+            <ButtonOutline onClick={startProjectHandler} className="w-full">
+              Explore Products <FaChevronRight className="w-5 h-5 ml-2" />
+            </ButtonOutline>
+          </Link>
         </div>
       </div>
     </div>
