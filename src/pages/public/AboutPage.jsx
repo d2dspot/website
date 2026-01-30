@@ -15,11 +15,11 @@ const AboutPage = () => {
       <Helmet>
         <title>About Us | d2dspot - Our Story & Vision</title>
         <meta name="description" content="Learn about d2dspot's journey, our mission to empower founders with MVP development, and our technical expertise in UI/UX and AI integration." />
-        <link rel="canonical" href="https://d2dspot.com/about" />
+        <link rel="canonical" href="https://www.d2dspot.com/about" />
         <meta property="og:title" content="About Us | d2dspot - Product Development Agency" />
         <meta property="og:description" content="Discover d2dspot's mission: helping startups scale with design and engineering excellence." />
-        <meta property="og:url" content="https://d2dspot.com/about" />
-        <meta property="og:image" content="https://d2dspot.com/assets/d2dspot.png" />
+        <meta property="og:url" content="https://www.d2dspot.com/about" />
+        <meta property="og:image" content="https://www.d2dspot.com/assets/d2dspot.png" />
       </Helmet>
       <Navbar />
       <div className=" overflow-hidden">

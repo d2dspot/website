@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const BASE_URL = 'https://d2dspot.com';
+const BASE_URL = 'https://www.d2dspot.com';
 
 const staticRoutes = [
     '',

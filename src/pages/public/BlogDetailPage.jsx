@@ -34,11 +34,11 @@ const BlogDetailPage = () => {
       <Helmet>
         <title>{`${blog.title} | d2dspot Blog`}</title>
         <meta name="description" content={blog.excerpt || `Read the full article about ${blog.title} on d2dspot's professional blog.`} />
-        <link rel="canonical" href={`https://d2dspot.com/blog/${id}`} />
+        <link rel="canonical" href={`https://www.d2dspot.com/blog/${id}`} />
         <meta property="og:title" content={blog.title} />
         <meta property="og:description" content={blog.excerpt} />
-        <meta property="og:url" content={`https://d2dspot.com/blog/${id}`} />
-        <meta property="og:image" content={blog.image ? `https://d2dspot.com${blog.image}` : "https://d2dspot.com/assets/d2dspot.png"} />
+        <meta property="og:url" content={`https://www.d2dspot.com/blog/${id}`} />
+        <meta property="og:image" content={blog.image ? `https://www.d2dspot.com${blog.image}` : "https://www.d2dspot.com/assets/d2dspot.png"} />
         <meta property="og:type" content="article" />
       </Helmet>
       {/* Blog Header */}

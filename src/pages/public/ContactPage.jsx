@@ -14,11 +14,11 @@ const ContactPage = () => {
       <Helmet>
         <title>Contact Us | d2dspot - Start Your Project</title>
         <meta name="description" content="Ready to build your product? Contact d2dspot for a free consultation. Let's discuss your MVP build, SaaS platform, or AI integration project today." />
-        <link rel="canonical" href="https://d2dspot.com/contact" />
+        <link rel="canonical" href="https://www.d2dspot.com/contact" />
         <meta property="og:title" content="Contact Us | d2dspot - Start Your Product Journey" />
         <meta property="og:description" content="Get in touch with d2dspot for expert MVP and AI product development." />
-        <meta property="og:url" content="https://d2dspot.com/contact" />
-        <meta property="og:image" content="https://d2dspot.com/assets/d2dspot.png" />
+        <meta property="og:url" content="https://www.d2dspot.com/contact" />
+        <meta property="og:image" content="https://www.d2dspot.com/assets/d2dspot.png" />
       </Helmet>
       <Navbar />
 
