@@ -14,9 +14,13 @@ const AcademyPage = () => {
   return (
     <div className="flex flex-col w-full">
       <Helmet>
-        <title>d2d Academy | Premier AI Education & Product Growth</title>
-        <meta name="description" content="Master the future of technology at d2d Academy. We provide premier AI education and workshops focused on integrating artificial intelligence into modern product development." />
+        <title>Academy | d2dspot - AI Education & Product Growth</title>
+        <meta name="description" content="Master artificial intelligence and product strategy at d2d Academy. Professional workshops and courses on AI integration for developers and founders." />
         <link rel="canonical" href="https://d2dspot.com/academy" />
+        <meta property="og:title" content="Academy | d2dspot - AI Education" />
+        <meta property="og:description" content="Elevate your skills with d2d Academy's AI and product development courses." />
+        <meta property="og:url" content="https://d2dspot.com/academy" />
+        <meta property="og:image" content="https://d2dspot.com/assets/d2dspot.png" />
       </Helmet>
       <Navbar />
       <div className=" overflow-hidden">

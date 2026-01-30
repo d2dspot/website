@@ -1,4 +1,16 @@
 {
+  "redirects": [
+    {
+      "source": "/blogs",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/acadamy",
+      "destination": "/academy",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/assets/:path*",

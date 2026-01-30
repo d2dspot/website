@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const LoginPage = React.lazy(() => import("@/pages/admin/LoginPage.jsx"));
@@ -49,13 +49,14 @@ const App = () => {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/academy" element={<AcademyPage />} />
           <Route
-            path="/blogs"
+            path="/blog"
             element={
               <CategoryProvider>
                 <BlogPage />
               </CategoryProvider>
             }
           />
+          <Route path="/blogs" element={<Navigate to="/blog" replace />} />
           <Route
             path="/blog/:id"
             element={

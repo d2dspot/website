@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 import AdminInput from "@/components/input/AdminInput";
 import logo from "/assets/logo_icon.svg";
@@ -84,6 +85,10 @@ const Section1 = () => {
 
   return (
     <section className="w-full min-h-screen px-4 sm:px-6 md:px-10 py-6 flex items-center box-border justify-center bg-[#E1E1FE]">
+      <Helmet>
+        <title>Admin Login | d2dspot</title>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
       <div className="w-full flex justify-center items-center">
         <div className="w-full sm:w-[547px] max-w-md sm:max-w-none bg-violet-50 rounded-3xl shadow-md p-6 sm:p-8 flex flex-col items-center gap-6">
           {/* Logo */}

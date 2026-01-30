@@ -10,9 +10,13 @@ const BlogPage = () => {
   return (
     <div className="flex flex-col w-full mx-auto">
       <Helmet>
-        <title>Tech & Design Insights | d2dspot Blog</title>
+        <title>Blog | d2dspot - Tech, Design & AI Insights</title>
         <meta name="description" content="Stay updated with the latest in AI integration, UI/UX trends, and product development strategies. Expert insights for startup founders and product owners." />
-        <link rel="canonical" href="https://d2dspot.com/blogs" />
+        <link rel="canonical" href="https://d2dspot.com/blog" />
+        <meta property="og:title" content="Blog | d2dspot - Tech & Design Insights" />
+        <meta property="og:description" content="Latest articles on AI, product development, and UI/UX design from d2dspot." />
+        <meta property="og:url" content="https://d2dspot.com/blog" />
+        <meta property="og:image" content="https://d2dspot.com/assets/d2dspot.png" />
       </Helmet>
       <Navbar />
 

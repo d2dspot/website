@@ -13,9 +13,13 @@ const AboutPage = () => {
   return (
     <div className="flex flex-col w-full">
       <Helmet>
-        <title>About d2dspot | Our Design-to-Deployment Philosophy</title>
-        <meta name="description" content="Discover how d2dspot helps startups scale. Our mission is to bridge the gap between abstract ideas and functional, user-centric digital products through deep engineering expertise." />
+        <title>About Us | d2dspot - Our Story & Vision</title>
+        <meta name="description" content="Learn about d2dspot's journey, our mission to empower founders with MVP development, and our technical expertise in UI/UX and AI integration." />
         <link rel="canonical" href="https://d2dspot.com/about" />
+        <meta property="og:title" content="About Us | d2dspot - Product Development Agency" />
+        <meta property="og:description" content="Discover d2dspot's mission: helping startups scale with design and engineering excellence." />
+        <meta property="og:url" content="https://d2dspot.com/about" />
+        <meta property="og:image" content="https://d2dspot.com/assets/d2dspot.png" />
       </Helmet>
       <Navbar />
       <div className=" overflow-hidden">

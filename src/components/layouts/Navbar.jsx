@@ -30,7 +30,7 @@ const Navbar = () => {
     { label: "Home", path: "/", hasDropdown: false },
     { label: "Academy", path: "/academy" },
     { label: "About Us", path: "/about" },
-    { label: "Blogs", path: "/blogs" },
+    { label: "Blogs", path: "/blog" },
     { label: "Contact Us", path: "/contact", hasDropdown: false },
   ];
 

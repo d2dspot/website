@@ -18,6 +18,15 @@ const HomePage = () => {
         <title>d2dspot | Product Development Agency | UI/UX & AI Product Studio</title>
         <meta name="description" content="d2dspot turns your vision into market-ready digital products. Specializing in MVP development for founders, expert UI/UX design, and AI integration for SaaS." />
         <link rel="canonical" href="https://d2dspot.com/" />
+        <meta property="og:title" content="d2dspot | Product Development Agency | UI/UX & AI AI integration" />
+        <meta property="og:description" content="Building market-leading products through expert design and engineering." />
+        <meta property="og:url" content="https://d2dspot.com/" />
+        <meta property="og:image" content="https://d2dspot.com/assets/d2dspot.png" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="d2dspot | Product Development Agency" />
+        <meta name="twitter:description" content="Design to Deployment. We build products that scale." />
+        <meta name="twitter:image" content="https://d2dspot.com/assets/d2dspot.png" />
       </Helmet>
       <Navbar />
       <div className="overflow-hidden">

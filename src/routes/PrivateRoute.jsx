@@ -1,11 +1,11 @@
 import { UserContext } from "@/context/userContext";
 import NotAuthorized from "@/pages/error/NotAuthorized";
 import React, { useContext } from "react";
+import { Helmet } from "react-helmet-async";
 import { Outlet, Navigate } from "react-router-dom";
 
 const PrivateRoute = ({ allowedRoles }) => {
   const { user, loading } = useContext(UserContext);
- 
 
   if (loading)
     return (
@@ -22,8 +22,15 @@ const PrivateRoute = ({ allowedRoles }) => {
     return <NotAuthorized />;
   }
 
-  // Authorized: render the nested route
-  return <Outlet />;
+  // Authorized: render the nested route with noindex meta
+  return (
+    <>
+      <Helmet>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
+      <Outlet />
+    </>
+  );
 };
 
 export default PrivateRoute;

@@ -9,7 +9,7 @@ const Section1 = ({ blog }) => {
   const navigate = useNavigate();
 
   const handleCategoryClick = () => {
-    navigate(`/blogs#categoryBlogDiv`);
+    navigate(`/blog#categoryBlogDiv`);
     setSelectedCategory(category);
 
     setTimeout(() => {
@@ -30,7 +30,7 @@ const Section1 = ({ blog }) => {
         {/* Breadcrumb & Title */}
         <div className="text-base sm:text-lg md:text-xl text-blue-950 font-medium leading-relaxed tracking-tight">
           <Link
-            to="/blogs"
+            to="/blog"
             className="mx-1 text-blue-950 hover:underline hover:text-blue-600"
           >
             Blog

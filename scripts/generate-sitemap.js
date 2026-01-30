@@ -8,7 +8,7 @@ const staticRoutes = [
     '/about',
     '/contact',
     '/academy',
-    '/blogs',
+    '/blog',
 ];
 
 // Helper to extract blog IDs from data.js
